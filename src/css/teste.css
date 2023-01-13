@@ -1,0 +1,72 @@
+body {
+  font-family: monospace;
+  color: white;
+}
+
+aside#left h1 {
+  font-size: 3em;
+}
+
+header {
+  background-color: rgb(38, 38, 38);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px !important;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.form-container {
+  background-color: rgb(227, 227, 227);
+  padding: 5px 10px;
+  border-radius: 35px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  background-color: transparent;
+  border: none;
+  padding-left: 7.5px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.aside-container {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+aside#left,
+aside#right {
+  width: 45%;
+}
+
+aside#right {
+  text-align: center;
+}
+
+.left-aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
