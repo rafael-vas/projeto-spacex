@@ -1,40 +1,43 @@
-:root {
-  --bgQuemSomos: #f2f2f2;
-  --tituloQuemSomos: #390750;
-}
-
 html {
   min-width: 100vh;
 }
 
 body {
-  font-family: monospace;
-  color: white;
-  background: url("../img/bg.jpg");
-  background-position: center;
-  background-repeat: space;
-  background-size: cover;
+  font-family: "poppinsregular" !important;
+  color: #fff;
 }
 
+/*Formatações do HEADER */
+
 header {
-  /* background: linear-gradient(#162da0, #420a86); */
-  /* background: url("https://img.freepik.com/fotos-gratis/fundo-abstrato-espaco-3d-com-paisagem-de-wireframe_1048-10648.jpg?w=740&t=st=1673752732~exp=1673753332~hmac=380ea92439126fa8b7a11e03ba4c929f7f38aeb946305dccd634205ad52b9dd7");
+  background: url("../img/bg2.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   padding: 10px 50px !important;
-  padding-bottom: 225px !important;
-  position: relative !important;
+  padding-bottom: 215px !important;
+  /* border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px; */
+  color: #fff;
+  position: relative;
+}
+
+header .navbar-mobile {
+  display: none;
 }
 
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 20px 80px !important;
 }
 
-header nav h1 a,
-header nav li a {
+header nav h1 {
+  font-size: 2em;
+  letter-spacing: 0.8px;
+}
+
+header nav ul a {
   color: #fff;
   text-decoration: none;
 }
@@ -47,61 +50,61 @@ header nav a img {
 
 header nav ul {
   display: flex;
+  margin: 0;
   gap: 65px;
 }
 
-header nav li a {
+header nav ul a {
   font-size: 14pt;
   opacity: 0.8;
   transition: all 0.4s;
   border-radius: 50px;
 }
 
-header nav li a:hover {
+header nav a:hover {
   opacity: 1;
 }
 
-form {
+header form {
   display: flex;
   align-items: center;
 }
 
-form input {
+header form input {
   width: 100%;
   color: #fff;
   background-color: transparent;
   border: none;
   padding-left: 7.5px;
   font-size: 11pt;
-  font-family: cursive;
   letter-spacing: 1px;
 }
 
-form input:focus {
+header form input:focus {
   outline: none;
 }
 
-.form-container {
+header .form-container {
   width: 300px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.614);
-  padding: 2px 6px;
+  padding: 6px 12px;
   border-radius: 35px;
   transition: all 0.3s;
 }
 
-.form-container:focus-within {
+header .form-container:focus-within {
   background-color: rgba(198, 198, 198, 0.227);
 }
 
-.form-container form img {
+header .form-container form img {
   color: white;
   width: 20px;
-  padding: 7px;
   opacity: 0.8;
+  margin-right: 3px;
 }
 
-.aside-container {
+header .divs-container {
   padding-top: 20px;
   height: 520px;
   display: flex;
@@ -109,8 +112,8 @@ form input:focus {
   justify-content: center;
 }
 
-aside#left,
-aside#right {
+header div#left,
+header div#right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,171 +122,240 @@ aside#right {
   width: 45%;
 }
 
-aside#right img {
-  max-height: 100%;
-  max-width: 100%;
+header div#right {
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+header div#right img {
+  width: 550px;
+  height: 550px;
   margin-left: 30px;
   filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.15));
   -webkit-filter: drop-shadow();
 }
 
-aside#left h1 {
-  font-size: 3.8em;
+header div#left h1 {
+  font-size: 3.7em;
+  font-weight: 600;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.384);
 }
 
-aside#left p {
-  font-size: 1.4em;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.384);
+header div#left p {
+  font-size: 1.25em;
+  opacity: 0.9;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.584);
 }
 
-.left-aside-content {
+header .left-content {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
-.left-aside-buttons {
+header .left-buttons {
   display: flex;
   gap: 20px;
 }
 
-.left-aside-buttons button {
+header .left-buttons button {
   background: linear-gradient(
     rgba(195, 146, 252, 0.349),
     rgba(97, 44, 95, 0.349)
   );
   border-radius: 200px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.863);
   padding: 7.5px 18px;
   padding-bottom: 8.5px;
   border: none;
-  font-family: monospace;
   letter-spacing: 2px;
   cursor: pointer;
-  font-weight: 600;
+
   transition: all ease-in-out 0.3s;
 }
 
-.left-aside-buttons button:nth-child(2) {
+header .left-buttons button:nth-child(2) {
   background: linear-gradient(
     rgba(148, 146, 252, 0.349),
     rgba(65, 44, 97, 0.349)
   );
 }
-.left-aside-buttons button:nth-child(2):hover {
+header .left-buttons button:nth-child(2):hover {
   background: linear-gradient(
     rgba(148, 146, 252, 0.549),
     rgba(65, 44, 97, 0.549)
   );
 }
 
-.left-aside-buttons button:hover {
+header .left-buttons button:hover {
   background: linear-gradient(
     rgba(195, 146, 252, 0.549),
     rgba(97, 44, 95, 0.549)
   );
 }
 
-header nav h1 {
-  font-size: 2em;
-  letter-spacing: 0.8px;
+header .info-container {
+  position: absolute;
+  width: max-content;
+  bottom: -60px;
+  transform: translate(-50%);
+  left: 50%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 30px;
 }
 
-/**/
-
-main > section {
-  height: 420px;
+header .info-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  height: 40%;
+  padding: 0 30px;
 }
 
-main #quem-somos {
-  /* background: linear-gradient(#420a86, #010d27); */
-  /* background-color: #fff; */
-  background-color: var(--bgQuemSomos);
+header .info-container > div:not(.info-5) {
+  border-right: 3px solid rgba(128, 128, 128, 0.608);
+}
+
+header .info-container .info-1 {
+  padding-left: 0;
+}
+
+header .info-container > div span:nth-child(1) {
+  font-weight: 600;
+  color: rgb(156, 156, 156);
+}
+header .info-container > div span:nth-child(2) {
+  font-weight: bold;
+  color: #000;
+}
+
+header .info-container button {
+  background-color: #3b47d1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12pt;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+/*Formatações do MAIN*/
+
+main {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #ofertas {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #000;
-}
-
-main #curiosidades {
-  text-align: center;
-  height: 2200px;
-  /* background-color: #010d27; */
-}
-
-@media screen and (min-width: 992px) {
-  main #curiosidades img {
-    max-width: 700px;
-    transition: all 2s;
-  }
-
-  header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 80px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  main #curiosidades img {
-    max-width: 200px;
-    transition: all 2s;
-  }
-}
-
-main #curiosidades img:hover {
-  transform: rotate(360deg);
-  cursor: pointer;
-}
-
-img#sol {
-  margin-right: 10em;
-}
-
-img#terra {
-  width: 100px;
-}
-
-img#lua {
-  width: 25px;
-}
-
-.imgs-curiosidades {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-main #quem-somos {
   padding-top: 100px;
   text-align: center;
 }
 
-main #quem-somos h1 {
-  font-size: 4.5em;
-  color: var(--tituloQuemSomos);
+main #ofertas h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin: 20px 0;
+  margin-bottom: 70px;
 }
 
-.custom-shape-divider-bottom-1673753926 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+main #ofertas .ofertas-content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: start;
 }
 
-.custom-shape-divider-bottom-1673753926 svg {
-  position: relative;
-  display: block;
-  width: calc(135% + 1.3px);
-  height: 94px;
+main #ofertas .ofertas-content .card {
+  background-color: #e3e3e3;
 }
 
-.custom-shape-divider-bottom-1673753926 .shape-fill {
-  fill: var(--bgQuemSomos);
+main #ofertas .ofertas-content .card-body {
+  background-color: #fff;
+}
+
+main #ofertas .ofertas-content img:not(.logo) {
+  width: 230px;
+  margin: auto;
+}
+
+main #ofertas .logo {
+  width: 25px;
+  height: 25px;
+}
+
+main #ofertas .pepsi-logo {
+  height: 20px;
+  width: 20px;
+}
+
+main #ofertas .ofertas-content .text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+main #ofertas .ofertas-content h5 {
+  padding-top: 7px;
+  font-weight: 600;
+}
+
+main #ofertas .ofertas-content .buttons-wrap {
+  display: flex;
+  gap: 4px;
+}
+main #ofertas .ofertas-content .buttons-wrap .btn-buy {
+  background-color: #520c78;
+  border-color: #520c78;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main #ofertas .ofertas-content .cart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-color: #520c78;
+}
+
+main #ofertas .ofertas-content .cart-icon svg {
+  fill: #520c78;
+}
+
+main #ofertas .ofertas-content .cart-icon span {
+  color: #520c78;
+  font-weight: 600;
+  margin: 0 7px;
+}
+
+main #ofertas .ofertas-content .card-price {
+  margin: 0;
+}
+
+main #ofertas .ofertas-content .old-price {
+  font-size: 0.9em;
+  text-decoration: line-through;
+  color: #a5a5a5;
+  margin-top: 0.5em;
+}
+
+main #ofertas .ofertas-content .new-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #008000;
+  margin-bottom: 1em;
 }
