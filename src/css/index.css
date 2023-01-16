@@ -42,7 +42,7 @@ header nav ul a {
   text-decoration: none;
 }
 
-header nav a img {
+header .navbar-desktop a img {
   width: 125px;
   padding-top: 5px;
   vertical-align: bottom;
@@ -70,7 +70,7 @@ header form {
   align-items: center;
 }
 
-header form input {
+header .navbar input {
   width: 100%;
   color: #fff;
   background-color: transparent;
@@ -80,11 +80,11 @@ header form input {
   letter-spacing: 1px;
 }
 
-header form input:focus {
+header .navbar form input:focus {
   outline: none;
 }
 
-header .form-container {
+header .navbar .form-container {
   width: 300px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.614);
@@ -93,11 +93,11 @@ header .form-container {
   transition: all 0.3s;
 }
 
-header .form-container:focus-within {
+header .navbar-desktop .form-container:focus-within {
   background-color: rgba(198, 198, 198, 0.227);
 }
 
-header .form-container form img {
+header .navbar .form-container form img {
   color: white;
   width: 20px;
   opacity: 0.8;
@@ -155,43 +155,39 @@ header .left-content {
 
 header .left-buttons {
   display: flex;
+  font-family: "poppinsregular" !important;
   gap: 20px;
 }
 
-header .left-buttons button {
-  background: linear-gradient(
-    rgba(195, 146, 252, 0.349),
-    rgba(97, 44, 95, 0.349)
-  );
-  border-radius: 200px;
-  color: rgba(255, 255, 255, 0.863);
+header #left .left-buttons button {
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+  font-family: "poppinsregular";
+  border-radius: 20px !important;
   padding: 7.5px 18px;
   padding-bottom: 8.5px;
+  letter-spacing: 1px;
   border: none;
-  letter-spacing: 2px;
   cursor: pointer;
-
   transition: all ease-in-out 0.3s;
 }
 
-header .left-buttons button:nth-child(2) {
-  background: linear-gradient(
-    rgba(148, 146, 252, 0.349),
-    rgba(65, 44, 97, 0.349)
-  );
-}
-header .left-buttons button:nth-child(2):hover {
-  background: linear-gradient(
-    rgba(148, 146, 252, 0.549),
-    rgba(65, 44, 97, 0.549)
-  );
+header #left .left-buttons button:nth-child(1):hover {
+  background-color: #294bb3;
+  color: #fff;
 }
 
-header .left-buttons button:hover {
-  background: linear-gradient(
-    rgba(195, 146, 252, 0.549),
-    rgba(97, 44, 95, 0.549)
-  );
+header #left .left-buttons button:nth-child(2) {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+header .left-buttons button:nth-child(2):hover {
+  background-color: #294bb3 !important;
+  color: #fff !important;
+  border-color: #294bb3 !important;
 }
 
 header .info-container {
