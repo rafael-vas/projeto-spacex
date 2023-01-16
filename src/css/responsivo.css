@@ -23,7 +23,6 @@
   header .divs-container {
     flex-flow: column wrap;
     height: fit-content;
-    width: fit-content;
   }
 
   header .divs-container #left {
