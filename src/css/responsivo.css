@@ -88,14 +88,22 @@
   nav.bs .logo-bs {
     position: absolute;
     top: 8px;
-    left: 25px;
+    /* left: 25px; */
+    left: 50%;
+    transform: translate(-50%);
     width: 100px;
   }
 
   nav.bs .container-fluid {
     position: relative;
-    text-align: end;
+    text-align: start;
     padding: 13px 20px;
+  }
+
+  nav.bs .container-fluid .user-icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
   }
 
   nav.bs .navbar-toggle:active {
