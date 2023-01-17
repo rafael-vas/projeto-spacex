@@ -15,14 +15,12 @@ header {
   background-size: cover;
   padding: 10px 50px !important;
   padding-bottom: 215px !important;
-  /* border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px; */
   color: #fff;
   position: relative;
 }
 
-header .navbar-mobile {
-  display: none;
+header .navbar-bs {
+  display: none !important;
 }
 
 header nav {
@@ -105,7 +103,7 @@ header .navbar .form-container form img {
 }
 
 header .divs-container {
-  padding-top: 20px;
+  padding-top: 60px;
   height: 520px;
   display: flex;
   align-items: center;
@@ -284,7 +282,7 @@ main #ofertas .ofertas-content .card-body {
 }
 
 main #ofertas .ofertas-content img:not(.logo) {
-  width: 230px;
+  width: 210px;
   margin: auto;
 }
 

@@ -1,23 +1,13 @@
 @media screen and (max-width: 1200px) {
+  .navbar-desktop {
+    display: none !important;
+  }
+
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 !important;
-  }
-
-  header .navbar-mobile {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-around !important;
-    padding: 0 !important ;
-  }
-
-  header .navbar-mobile a img {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 200px;
   }
 
   header .divs-container {
@@ -29,83 +19,108 @@
   }
 
   header div#right img {
-    width: 300px;
-    height: 300px;
+    width: 325px;
+    height: 325px;
     margin-left: 0;
     margin-right: 20px;
     margin-bottom: 40px;
   }
 
   header .divs-container #left {
+    text-align: start;
     width: 80%;
+  }
+
+  header .left-content {
+    gap: 30px;
+  }
+
+  header div#left h1 {
+    font-size: 2.8em;
+    margin-bottom: 0;
+  }
+
+  header div#left p {
+    font-size: 1.02em;
   }
 
   header .left-buttons {
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  header .left-buttons button {
+    width: 100%;
+    font-size: 11pt;
   }
 
   .info-container {
     display: none !important;
   }
 
-  .navbar-desktop {
-    display: none !important;
+  main #ofertas {
+    padding-top: 70px;
   }
 
-  .navbar-mobile .wrapper {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-mobile .wrapper .form-container {
-    width: 100%;
-  }
-
-  .navbar-mobile ul {
-    background-color: rgba(0, 0, 0, 0.226);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: 10px 0;
-  }
-  .navbar-mobile ul a {
-    font-weight: bold;
-  }
-
-  nav .form-container {
-    color: #000 !important;
-    background-color: #fff !important;
-    opacity: 0.8;
-    width: 192px !important;
-    padding-right: 2px !important;
-    margin-bottom: 85px;
-  }
-
-  .navbar-mobile .form-container:focus-within {
-    opacity: 1;
-    background-color: #fff;
-    width: 85% !important;
-  }
-
-  .navbar-mobile .form-container input {
-    color: #000;
-    font-size: 14pt;
-  }
-
-  .navbar-mobile .form-container img {
-    fill: #000;
-    width: 28px !important;
+  main #ofertas h1 {
+    font-size: 2.3em;
   }
 
   main .ofertas-content .card {
     width: 17rem !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.282);
   }
 
   main #ofertas .ofertas-content img:not(.logo) {
     width: 150px;
+  }
+
+  /* --------------------------------------------------------------- */
+
+  nav.bs {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.274) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  nav.bs .logo-bs {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    width: 100px;
+  }
+
+  nav.bs .container-fluid {
+    position: relative;
+    text-align: end;
+    padding: 13px 20px;
+  }
+
+  nav.bs .navbar-toggle:active {
+    outline: none;
+    border: none;
+  }
+
+  nav.bs .navbar-collapse {
+    padding: 10px 5px 10px 0;
+  }
+
+  .nav-item .nav-link,
+  .nav-item .nav-link:active {
+    color: #fff !important;
+  }
+
+  nav.bs ul {
+    gap: 0 !important;
+  }
+
+  nav.bs input {
+    background-color: white;
+  }
+
+  nav.bs form {
+    display: none !important;
   }
 }
