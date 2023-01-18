@@ -122,8 +122,12 @@
     flex-flow: column wrap;
   }
 
+  main #sobre-nos .desc-container .desc {
+    width: 80% !important;
+  }
+
   main #sobre-nos > p {
-    width: 90%;
+    width: 80%;
   }
 
   /* --------------------------------------------------------------- */
