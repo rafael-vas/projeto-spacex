@@ -172,8 +172,12 @@ header #left .left-buttons button {
   transition: all ease-in-out 0.3s;
 }
 
+header #left .left-buttons button a:hover {
+  color: #fff;
+}
+
 header #left .left-buttons button:nth-child(1):hover {
-  background-color: #294bb3;
+  background-color: #df179cdc;
   color: #fff;
 }
 
@@ -184,9 +188,9 @@ header #left .left-buttons button:nth-child(2) {
 }
 
 header .left-buttons button:nth-child(2):hover {
-  background-color: #294bb3 !important;
+  background-color: #df179cdc !important;
   color: #fff !important;
-  border-color: #294bb3 !important;
+  border-color: #df179cdc !important;
 }
 
 header .info-container {
@@ -240,6 +244,11 @@ header .info-container button {
   border: none;
   border-radius: 5px;
   margin-left: 15px;
+  transition: background linear 0.2s;
+}
+
+header .info-container button:hover {
+  background-color: #2e38a9;
 }
 
 /*Formatações do MAIN*/
@@ -349,6 +358,18 @@ main #ofertas .ofertas-content .cart-icon {
   justify-content: center;
   background-color: transparent;
   border-color: #520c78;
+}
+
+main #ofertas .ofertas-content .cart-icon:hover,
+main #ofertas .ofertas-content .btn-buy:hover {
+  background-color: #7119a1;
+  border-color: #7119a1;
+}
+
+main #ofertas .ofertas-content .cart-icon:hover svg,
+main #ofertas .ofertas-content .cart-icon:hover span {
+  color: #fff;
+  fill: #fff;
 }
 
 main #ofertas .ofertas-content .cart-icon svg {
