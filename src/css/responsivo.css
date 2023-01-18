@@ -68,12 +68,54 @@
   }
 
   main .ofertas-content .card {
-    width: 17rem !important;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.282);
   }
 
+  main .ofertas-content .card h5 {
+    font-size: 0.9em;
+    margin-bottom: 2px !important;
+  }
+
+  main .ofertas-content .card .text-wrap img:not(.pepsi-logo) {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  main .ofertas-content .text-wrap .pepsi-logo {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  main .ofertas-content .stars-container {
+    align-items: center !important;
+  }
+
+  main .ofertas-content .card .stars-container img {
+    width: 10px !important;
+  }
+
+  main .ofertas-content .card .stars-container span {
+    font-size: 7pt !important;
+  }
+
+  main .ofertas-content .card .buttons-wrap svg {
+    width: 12px;
+  }
+
+  main .ofertas-content .card a.btn {
+    font-size: 9pt;
+  }
+
+  main .ofertas-content .card .old-price {
+    font-size: 0.7em !important;
+  }
+
+  main .ofertas-content .card .new-price {
+    font-size: 0.9em !important;
+  }
+
   main #ofertas .ofertas-content img:not(.logo) {
-    width: 150px;
+    width: 130px;
   }
 
   /* --------------------------------------------------------------- */
@@ -97,7 +139,7 @@
   nav.bs .container-fluid {
     position: relative;
     text-align: start;
-    padding: 13px 20px;
+    padding: 14px 20px;
   }
 
   nav.bs .container-fluid .user-icon {
@@ -112,9 +154,8 @@
   }
 
   nav.bs .navbar-collapse {
-    padding: 10px 5px 10px 0;
+    padding: 15px 5px 5px 0;
   }
-
   .nav-item .nav-link,
   .nav-item .nav-link:active {
     color: #fff !important;

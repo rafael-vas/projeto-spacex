@@ -49,6 +49,7 @@ header .navbar-desktop a img {
 header nav ul {
   display: flex;
   margin: 0;
+  padding-left: 0;
   gap: 65px;
 }
 
@@ -277,12 +278,27 @@ main #ofertas .ofertas-content .card {
   background-color: #e3e3e3;
 }
 
+main #ofertas .ofertas-content .stars-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+main #ofertas .ofertas-content .card .stars-container img {
+  width: 14px;
+  margin: 0;
+}
+main #ofertas .ofertas-content .card .stars-container span {
+  font-size: 10pt;
+  opacity: 0.6;
+}
+
 main #ofertas .ofertas-content .card-body {
   background-color: #fff;
 }
 
 main #ofertas .ofertas-content img:not(.logo) {
-  width: 210px;
+  width: 190px;
   margin: auto;
 }
 
@@ -304,6 +320,7 @@ main #ofertas .ofertas-content .text-wrap {
 
 main #ofertas .ofertas-content h5 {
   padding-top: 7px;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 
