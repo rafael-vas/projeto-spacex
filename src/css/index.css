@@ -250,16 +250,24 @@ main {
   background-size: cover;
 }
 
-main #ofertas {
+/* main #ofertas { */
+main > section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #000;
-  padding-top: 100px;
+  padding: 100px 0;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.153);
 }
 
-main #ofertas h1 {
+main #ofertas {
+  margin-top: 0;
+  padding-top: 120px;
+}
+
+/* main #ofertas h1 { */
+main > section h1 {
   font-size: 2.8em;
   font-weight: 600;
   margin: 20px 0;
@@ -369,4 +377,46 @@ main #ofertas .ofertas-content .new-price {
   font-weight: bold;
   color: #008000;
   margin-bottom: 1em;
+}
+
+main #ofertas {
+  /* color: white; */
+  /* background: url("https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63644.jpg?w=900&t=st=1674011027~exp=1674011627~hmac=f44c612f25fe6e27d5cdf3e1164bdf2da7982c7b33d7a03a018a39bdb89e7434");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+main #sobre-nos {
+  background-color: rgb(234, 234, 234);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #sobre-nos h1 {
+  margin-bottom: 20px !important;
+}
+
+main #sobre-nos .desc-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  width: 85%;
+}
+
+main #sobre-nos .desc-container .desc {
+  width: 400px;
+}
+
+main #sobre-nos .desc-container .desc h5 {
+  font-weight: bold;
+}
+
+main #sobre-nos .desc-container .desc img {
+  width: 75px;
+  margin: 20px 0;
 }
