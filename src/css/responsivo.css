@@ -64,7 +64,7 @@
   }
 
   main > section h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   main .ofertas-content .card {
@@ -122,12 +122,29 @@
     flex-flow: column wrap;
   }
 
-  main #sobre-nos .desc-container .desc {
-    width: 80% !important;
+  main #sobre-nos > p {
+    width: 85%;
   }
 
-  main #sobre-nos > p {
-    width: 80%;
+  main #sobre-nos .desc-container .desc {
+    width: 85% !important;
+  }
+
+  main #sobre-nos .desc-container .desc img {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+
+  main #sobre-nos .desc-container .desc h5 {
+    font-size: 1em;
+  }
+
+  main #sobre-nos .desc-container .desc p {
+    font-size: 0.8em;
+  }
+
+  main #sobre-nos .desc-container .desc-3 img {
+    margin-bottom: 5px;
   }
 
   /* --------------------------------------------------------------- */
