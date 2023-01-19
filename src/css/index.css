@@ -267,12 +267,16 @@ main > section {
   color: #000;
   padding: 100px 0;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.153);
+  border: 1px solid rgba(0, 0, 0, 0.045);
 }
 
 main #ofertas {
   margin-top: 0;
   padding-top: 120px;
+}
+
+main #ofertas .destaque {
+  border-bottom: 6px solid #520c78;
 }
 
 /* main #ofertas h1 { */
@@ -293,6 +297,7 @@ main #ofertas .ofertas-content {
 
 main #ofertas .ofertas-content .card {
   background-color: #e3e3e3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.182);
 }
 
 main #ofertas .ofertas-content .stars-container {
@@ -400,27 +405,27 @@ main #ofertas .ofertas-content .new-price {
   margin-bottom: 1em;
 }
 
-main #ofertas {
-  /* color: white; */
-  /* background: url("https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63644.jpg?w=900&t=st=1674011027~exp=1674011627~hmac=f44c612f25fe6e27d5cdf3e1164bdf2da7982c7b33d7a03a018a39bdb89e7434");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-}
 main #sobre-nos {
-  background-color: rgb(234, 234, 234);
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+main #sobre-nos .destaque {
+  color: #520c78;
+  /* text-shadow: 1px 1px 4px; */
+  font-weight: 600;
+}
+
 main #sobre-nos h1 {
   margin-bottom: 20px !important;
+  font-size: 4em;
+  margin-top: 10px;
 }
 
 main #sobre-nos .desc-container {
-  margin-top: 4rem;
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,6 +436,10 @@ main #sobre-nos .desc-container {
 
 main #sobre-nos .desc-container .desc {
   width: 400px;
+  background-color: rgba(232, 232, 232, 0.776);
+  padding: 20px 50px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 main #sobre-nos .desc-container .desc h5 {
@@ -440,4 +449,65 @@ main #sobre-nos .desc-container .desc h5 {
 main #sobre-nos .desc-container .desc img {
   width: 75px;
   margin: 20px 0;
+}
+
+main #sobre-nos .sobre-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 75%;
+  margin-right: 100px;
+}
+
+main #sobre-nos .sobre-info-text {
+  width: 48%;
+  text-align: start;
+}
+
+main #sobre-nos .sobre-info-img {
+  width: 48%;
+}
+
+main #sobre-nos .sobre-info-img img {
+  width: 600px;
+}
+
+main #sobre-nos p,
+main #sobre-nos h1,
+main #sobre-nos h5,
+main #ofertas h1 {
+  text-shadow: 0 0 5px #520c7840;
+}
+
+main #sobre-nos .sobre-info-text p {
+  font-size: 1.1em;
+  text-shadow: 0 0 8px #520c7840;
+}
+/**/
+main #sobre-nos .sobre-info-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 75%;
+  margin-left: 100px;
+}
+
+main #sobre-nos .sobre-info-text-2 {
+  width: 48%;
+  text-align: end;
+}
+
+main #sobre-nos .sobre-info-img-2 {
+  width: 48%;
+}
+
+main #sobre-nos .sobre-info-img-2 img {
+  width: 560px;
+}
+
+main #sobre-nos .sobre-info-text-2 p {
+  font-size: 1.1em;
+  text-shadow: 0 0 8px #520c7840;
 }

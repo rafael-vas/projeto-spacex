@@ -1,4 +1,8 @@
 @media screen and (max-width: 1200px) {
+  html {
+    min-width: 100%;
+  }
+
   .navbar-desktop {
     display: none !important;
   }
@@ -120,6 +124,8 @@
 
   main #sobre-nos .desc-container {
     flex-flow: column wrap;
+    margin-bottom: 7em;
+    margin-top: 4.5em;
   }
 
   main #sobre-nos > p {
@@ -145,6 +151,38 @@
 
   main #sobre-nos .desc-container .desc-3 img {
     margin-bottom: 5px;
+  }
+
+  main #sobre-nos .sobre-info-container,
+  main #sobre-nos .sobre-info-container-2 {
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0;
+    gap: 0;
+  }
+
+  main #sobre-nos .sobre-info-img,
+  main #sobre-nos .sobre-info-img-2 {
+    width: 80%;
+  }
+
+  main #sobre-nos .sobre-info-text,
+  main #sobre-nos .sobre-info-text-2 {
+    width: 80%;
+  }
+  main #sobre-nos .sobre-info-text h1,
+  main #sobre-nos .sobre-info-text-2 h1 {
+    font-size: 2.3em;
+  }
+  main #sobre-nos .sobre-info-text p,
+  main #sobre-nos .sobre-info-text-2 p {
+    font-size: 0.9em;
+  }
+
+  main #sobre-nos .sobre-info-img img,
+  main #sobre-nos .sobre-info-img-2 img {
+    /* width: 70%; */
+    width: 280px;
   }
 
   /* --------------------------------------------------------------- */
