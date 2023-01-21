@@ -1,4 +1,4 @@
-# landingPage-ifpe
+# Projeto SpaceX
 
 ## 🔗 Rodando o Projeto
 
